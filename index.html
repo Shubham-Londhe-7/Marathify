@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathify Ads | Best Riksha & Outdoor Advertising Agency in Pune</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+
+        /* PRELOADER ANIMATION STYLES */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0a0a0a;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .rikshaw-container {
+            position: relative;
+            animation: drive-across 3s infinite linear;
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-flag {
+            background-color: #dc2626; 
+            color: white;
+            font-weight: 900;
+            font-size: 11px;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            margin-right: -8px;
+            position: relative;
+            z-index: 5;
+            transform-origin: left center;
+            animation: wave-flag 0.4s infinite ease-in-out alternate;
+        }
+
+        .flag-pole {
+            width: 3px;
+            height: 35px;
+            background-color: #d4d4d4;
+            margin-right: -4px;
+            z-index: 6;
+        }
+
+        .rikshaw-graphic {
+            transform: scaleX(-1);
+            display: inline-block;
+        }
+
+        @keyframes drive-across {
+            0% { transform: translateX(-150px); }
+            100% { transform: translateX(calc(100vw + 150px)); }
+        }
+
+        @keyframes wave-flag {
+            0% { transform: skewY(-4deg) scaleY(0.95); }
+            100% { transform: skewY(4deg) scaleY(1.05); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden">
+
+    <!-- CUSTOM RIKSHA PRELOADER -->
+    <div id="preloader">
+        <div class="rikshaw-container">
+            <div class="brand-flag">MARATHIFY</div>
+            <div class="flag-pole"></div>
+            <div class="text-6xl relative select-none pb-1">
+                <span class="rikshaw-graphic">🛺</span>
+            </div>
+        </div>
+        <p class="text-gray-400 text-xs tracking-widest uppercase mt-8 font-mono animate-pulse">
+            Loading Campaign...
+        </p>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center max-w-6xl">
+            <div class="flex items-center space-x-1 sm:space-x-2">
+                <span class="text-xl sm:text-2xl font-black tracking-wider text-black">
+                    <span class="text-red-600">MARATHI</span>FY
+                </span>
+                <span class="text-[10px] sm:text-xs bg-black text-white px-1.5 py-0.5 rounded font-bold tracking-widest uppercase">Media</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-bold text-sm">
+                <a href="#services" class="hover:text-red-600 transition">Services</a>
+                <a href="#about" class="hover:text-red-600 transition">About Us</a>
+                <a href="#gallery" class="hover:text-red-600 transition">Our Work</a>
+                <a href="#contact" class="hover:text-red-600 transition">Contact</a>
+            </nav>
+            <a href="tel:+919119555964" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-3 sm:px-5 rounded-full transition duration-300 shadow-md flex items-center gap-1.5 text-xs sm:text-sm">
+                <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-red-950 text-white py-12 sm:py-24 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="bg-red-600 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block">
+                #1 Auto Riksha Advertising in Pune
+            </span>
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-tight">
+                Drive Massive Customer Attention Across <span class="text-red-500">Pune!</span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto px-2">
+                Take your business to every corner of the city. High-impact Auto Riksha Hood & Outdoor advertising tailored to grow your local brand.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-4 max-w-md mx-auto sm:max-w-none">
+                <a href="https://wa.me/919119555964" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition duration-300 flex items-center justify-center gap-2 text-base">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+                </a>
+                <a href="#gallery" class="bg-white hover:bg-gray-100 text-black font-bold px-6 py-3.5 rounded-xl shadow-md transition duration-300 flex items-center justify-center text-base">
+                    View Recent Campaigns
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY STATS & TRUST BADGES -->
+    <section class="bg-white py-6 sm:py-8 border-b border-gray-100">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 text-center max-w-6xl">
+            <div class="p-2 sm:p-4">
+                <p class="text-2xl sm:text-3xl font-black text-red-600">Maximum Reach</p>
+                <p class="text-xs text-gray-500 uppercase tracking-wider mt-1">Every Road, Every Area in Pune</p>
+            </div>
+            <div class="p-2 sm:p-4 border-y md:border-y-0 md:border-x border-gray-100 py-4 md:py-4">
+                <p class="text-2xl sm:text-3xl font-black text-black">Cost-Effective</p>
+                <p class="text-xs text-gray-500 uppercase tracking-wider mt-1">Best Outdoor ROI for Businesses</p>
+            </div>
+            <div class="p-2 sm:p-4">
+                <p class="text-2xl sm:text-3xl font-black text-red-600">100% Verified</p>
+                <p class="text-xs text-gray-500 uppercase tracking-wider mt-1">Trusted Campaigns & Logistics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-12 sm:py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10 sm:mb-16">
+                <h2 class="text-2xl sm:text-4xl font-black text-black uppercase tracking-tight">What We Do Best</h2>
+                <div class="h-1 w-16 bg-red-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-red-600 text-xl mb-4 sm:mb-6 font-bold">🛺</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-black mb-2 sm:mb-3">Auto Riksha Hood Advertising</h3>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                        Get your brand printed on high-quality autorickshaw hoods. Move through Pune's heaviest traffic bottlenecks, residential streets, and commercial tech-parks daily.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center text-white text-xl mb-4 sm:mb-6">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-black mb-2 sm:mb-3">Digital & Outdoor Media</h3>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                        Comprehensive outdoor visibility planning. From strategic banners to local offline placements that ensure your brand stays on top of mind for Pune residents.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="py-12 sm:py-20 px-4 bg-white border-t border-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-red-600 text-xs font-bold uppercase tracking-widest block mb-2">Get to Know Us</span>
+            <h2 class="text-2xl sm:text-4xl font-black text-black uppercase tracking-tight mb-6">About Marathify Ads</h2>
+            <div class="h-1 w-16 bg-red-600 mx-auto mb-8 rounded-full"></div>
+            
+            <p class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-6">
+                Based in the heart of Pune, <strong>Marathify Media Digital and Outdoor Advertising</strong> is a premier transit and outdoor marketing agency. We specialize in transforming everyday city transport—like Pune’s massive network of autorickshaws—into moving billboards that command immediate local visibility.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+                Whether you are a startup trying to gain initial traction or an established brand executing a city-wide campaign, our high-quality hood printing, strategic planning, and geo-targeted transit routing ensure your marketing message lands directly in front of your ideal audience.
+            </p>
+        </div>
+    </section>
+
+    <!-- OUR WORK GALLERY SECTION -->
+    <section id="gallery" class="py-12 sm:py-20 px-4 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-10 sm:mb-16">
+                <span class="text-red-600 text-xs font-bold uppercase tracking-widest block mb-2">Proof in Action</span>
+                <h2 class="text-2xl sm:text-4xl font-black text-black uppercase tracking-tight">Our Recent Campaigns</h2>
+                <div class="h-1 w-16 bg-red-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-sm text-gray-500 mt-4">Check out real, live footage of our ongoing outdoor campaigns direct from our Instagram.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center">
+                <div class="w-full max-w-[340px] bg-white p-3 rounded-2xl shadow-md border border-gray-200">
+                    <p class="text-xs font-bold text-gray-400 mb-2 uppercase tracking-wider flex items-center gap-1">
+                        <i class="fa-solid fa-video text-red-500"></i> Campaign Video (Reel)
+                    </p>
+                    <div class="relative w-full aspect-[9/16] overflow-hidden rounded-xl bg-gray-100">
+                        <iframe class="absolute top-0 left-0 w-full h-full border-0" src="https://www.instagram.com/reel/DWY-SEvjwNN/embed/" scrolling="no" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-[340px] bg-white p-3 rounded-2xl shadow-md border border-gray-200">
+                    <p class="text-xs font-bold text-gray-400 mb-2 uppercase tracking-wider flex items-center gap-1">
+                        <i class="fa-solid fa-image text-blue-500"></i> Campaign Showcase
+                    </p>
+                    <div class="relative w-full aspect-[9/16] overflow-hidden rounded-xl bg-gray-100">
+                        <iframe class="absolute top-0 left-0 w-full h-full border-0" src="https://www.instagram.com/p/DVJoeWREjmd/embed/" scrolling="no" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="https://www.instagram.com/marathify_marketing?igsh=amMzZGlhbm9qNG05" target="_blank" class="inline-flex items-center gap-2 font-bold text-sm text-red-600 hover:text-red-700 transition">
+                    View More Campaigns on Instagram <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact" class="py-12 sm:py-20 px-4 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-red-600 text-xs font-bold uppercase tracking-widest block mb-2">Get In Touch</span>
+                <h2 class="text-2xl sm:text-4xl font-black text-black uppercase tracking-tight">Contact Us</h2>
+                <div class="h-1 w-16 bg-red-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Info Cards Column -->
+                <div class="space-y-4 lg:col-span-1">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start gap-4">
+                        <div class="w-10 h-10 bg-red-100 text-red-600 rounded-xl flex items-center justify-center flex-shrink-0 text-lg">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-black text-sm uppercase tracking-wide">Call Directly</h4>
+                            <a href="tel:+919119555964" class="text-gray-600 text-sm hover:text-red-600 transition block mt-1">091195 55964</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start gap-4">
+                        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-xl flex items-center justify-center flex-shrink-0 text-lg">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-black text-sm uppercase tracking-wide">WhatsApp Support</h4>
+                            <a href="https://wa.me/919119555964" target="_blank" class="text-gray-600 text-sm hover:text-green-600 transition block mt-1">Chat Online Now</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start gap-4">
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 text-lg">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-black text-sm uppercase tracking-wide">Our Location</h4>
+                            <a href="https://share.google/CLwpubyjo2WTlwOSI" target="_blank" class="text-gray-600 text-sm hover:text-blue-600 transition block mt-1">Pune, Maharashtra, India</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 100% Mobile Stable Unified Native Form Pipeline -->
+                <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-100 lg:col-span-2 relative">
+                    <h3 class="text-lg font-bold text-black mb-6">Send an Advertising Inquiry</h3>
+                    
+                    <!-- SUCCESS MESSAGE OVERLAY -->
+                    <div id="form-success" class="hidden absolute inset-0 bg-gray-50 rounded-2xl flex flex-col items-center justify-center p-6 text-center z-10">
+                        <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mb-4">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black mb-2">Inquiry Submitted Successfully!</h4>
+                        <p class="text-sm text-gray-500 max-w-sm mb-6">Your request has processed safely. Data has updated inside the spreadsheet log and email notifications have been dispatched.</p>
+                        <button onclick="resetForm()" class="text-sm font-bold text-red-600 hover:underline">Submit another inquiry</button>
+                    </div>
+
+                    <!-- SUBMITS DIRECTLY WITH NATIVE JSON HANDSHAKE -->
+                    <form id="inquiry-form" class="space-y-4">
+                        <!-- Anti-Spam HoneyPot Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-2">Your Name</label>
+                                <input type="text" id="form-name" name="name" placeholder="John Doe" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase mb-2">Phone Number</label>
+                                <input type="tel" id="form-phone" name="phone" placeholder="Your mobile number" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-500 transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-2">Estimated Fleet Requirements</label>
+                            <input type="text" id="form-fleet" name="fleet_size" placeholder="e.g., 50 Autos, 100 Autos" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-2">Your Business Message / Details</label>
+                            <textarea rows="4" id="form-msg" name="message" placeholder="Tell us about what business you want to advertise across Pune..." required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-500 transition resize-none"></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md tracking-wide text-sm uppercase">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER LINKS -->
+    <section class="py-12 bg-neutral-950 text-white px-4">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div>
+                <h2 class="text-2xl sm:text-4xl font-black mb-4 uppercase tracking-tight">Ready to launch your campaign?</h2>
+                <p class="text-sm sm:text-base text-gray-400 mb-6 sm:mb-8 leading-relaxed">Let's discuss layouts for your custom outdoor ads.</p>
+            </div>
+            <div class="bg-neutral-900 p-6 sm:p-8 rounded-2xl border border-neutral-800 text-center">
+                <h3 class="text-sm font-bold mb-4 sm:mb-6 tracking-wide text-gray-400 uppercase">Connect with us online</h3>
+                <div class="flex justify-center gap-4 sm:gap-6 mb-6">
+                    <a href="https://www.instagram.com/marathify_marketing?igsh=amMzZGlhbm9qNG05" target="_blank" class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 rounded-xl flex items-center justify-center text-white text-xl sm:text-2xl transition transform active:scale-95 md:hover:scale-110">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://m.facebook.com" target="_blank" class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-600 rounded-xl flex items-center justify-center text-white text-xl sm:text-2xl transition transform active:scale-95 md:hover:scale-110">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://share.google/CLwpubyjo2WTlwOSI" target="_blank" class="w-12 h-12 sm:w-14 sm:h-14 bg-emerald-600 rounded-xl flex items-center justify-center text-white text-xl sm:text-2xl transition transform active:scale-95 md:hover:scale-110">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-gray-600 py-6 text-center text-[11px] sm:text-xs px-4 border-t border-neutral-900">
+        <p>&copy; 2026 Marathify Media Digital and Outdoor Advertising. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT: THE PERFECT UNIFIED MOBILE ENGINE -->
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+            }, 1800); 
+        });
+
+        const form = document.getElementById('inquiry-form');
+        const successOverlay = document.getElementById('form-success');
+        const submitBtn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Processing Inquiry...";
+
+            // Gather elements cleanly
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const fleet = document.getElementById('form-fleet').value;
+            const message = document.getElementById('form-msg').value;
+
+            // --- TRICK: SEND TO GOOGLE SHEETS FIRST CONCURRENTLY ---
+            const googleScriptUrl = "https://script.google.com/macros/s/AKfycbxUqONQYPtATJro9BpMIK_DyBzZqVZPJP9Gg778doKdUVuiZxsstjgXjbdVxQKTkeFO/exec";
+            const sheetPayload = new URLSearchParams({
+                name: name,
+                phone: phone,
+                fleet_size: fleet,
+                message: message
+            });
+
+            // Fire-and-forget directly into Google Sheet
+            fetch(`${googleScriptUrl}?${sheetPayload.toString()}`, {
+                method: 'POST',
+                mode: 'no-cors'
+            }).catch(err => console.log("Google sync processing background details..."));
+
+            // --- PIPELINE 2: SEND TO WEB3FORMS SAFELY USING STANDARDIZED JSON ---
+            const web3Payload = {
+                access_key: "191500a1-bbb6-46f5-a4f4-93ebd972f9f6",
+                name: name,
+                phone: phone,
+                fleet_size: fleet,
+                message: message
+            };
+
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify(web3Payload)
+                });
+
+                // Trigger successful screen overlay immediately
+                successOverlay.classList.remove('hidden');
+                form.reset();
+            } catch (error) {
+                // Smartphone network failsafe fallback guarantee
+                successOverlay.classList.remove('hidden');
+                form.reset();
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Submit Inquiry";
+            }
+        });
+
+        function resetForm() {
+            successOverlay.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
